@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ViewFlipperActivityTuto!</string>
+    <string name="app_name">ViewFlipperActivityTuto</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="instruction1">What do you like ?</string>
+    <string name="instruction2">Select an Avatar :</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="choice">Your choice is</string>
+    <string name="no_choice">You have not do any choice</string>
+    <string name="hug">Hug</string>
+    <string name="santaclaus">Santaclaus</string>
+    <string name="select">Select it</string>
+</resources>

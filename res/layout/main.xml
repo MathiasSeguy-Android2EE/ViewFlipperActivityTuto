@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* <ul>
+* Android Tutorial, An <strong>Android2EE</strong>'s project.</br>
+* Produced by <strong>Dr. Mathias SEGUY</strong> with the smart contribution of <strong>Julien PAPUT</strong>.</br>
+* Delivered by <strong>http://android2ee.com/</strong></br>
+* Belongs to <strong>Mathias Seguy</strong></br>
+* ****************************************************************************************************************</br>
+* This code is free for any usage but can't be distribute.</br>
+* The distribution is reserved to the site <strong>http://android2ee.com</strong>.</br>
+* The intelectual property belongs to <strong>Mathias Seguy</strong>.</br>
+* <em>http://mathias-seguy.developpez.com/</em></br>
+* </br>
+* For any information (Advice, Expertise, J2EE or Android Training, Rates, Business):</br>
+* <em>mathias.seguy.it@gmail.com</em></br>
+* *****************************************************************************************************************</br>
+* Ce code est libre de toute utilisation mais n'est pas distribuable.</br>
+* Sa distribution est reservée au site <strong>http://android2ee.com</strong>.</br>
+* Sa propriété intellectuelle appartient à <strong>Mathias Séguy</strong>.</br>
+* <em>http://mathias-seguy.developpez.com/</em></br>
+* </br>
+* Pour tous renseignements (Conseil, Expertise, Formations J2EE ou Android, Prestations, Forfaits):</br>
+* <em>mathias.seguy.it@gmail.com</em></br>
+* *****************************************************************************************************************</br>
+* Merci à vous d'avoir confiance en Android2EE les Ebooks de programmation Android.
+* N'hésitez pas à nous suivre sur twitter: http://fr.twitter.com/#!/android2ee
+* N'hésitez pas à suivre le blog Android2ee sur Developpez.com : http://blog.developpez.com/android2ee-mathias-seguy/
+* *****************************************************************************************************************</br>
+* com.android2ee.android.tuto</br>
+* 25 mars 2011</br>
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutGeneral"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/previous" >
+        </Button>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/next" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#66FF0000"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/instruction1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instruction1" />
+
+                <RadioGroup
+                    android:id="@+id/RadioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/chocolate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chocolate" />
+
+                    <RadioButton
+                        android:id="@+id/hug"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hug" />
+
+                    <RadioButton
+                        android:id="@+id/santaclaus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/santaclaus" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/selectlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/select" >
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#6600FF00"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/instruction2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instruction2" />
+
+                <Gallery
+                    android:id="@+id/myGallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#660000FF"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/myChoice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/myAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </ViewFlipper>
+    </LinearLayout>
+
+</LinearLayout>
